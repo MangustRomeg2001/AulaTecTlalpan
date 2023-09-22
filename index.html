@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="icon" href="ruta/a/tu/favicon" type="image/x-icon">
-    <title> AulaTecTlalpan </title>
+    <link rel="icon" href="https://siitlalpan.appspot.com/images/tec/logoIt.png" type="image/png">
+    <title>AulaTecTlalpan</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,10 +26,11 @@
         nav ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
             margin: 0 10px;
         }
 
@@ -44,16 +44,15 @@
             padding: 50px;
         }
 
- p {
-    margin: 40px; /* Aquí puedes ajustar el valor según tus preferencias */
-    font-size: 150%; 
-    text-align: justify; 
+        p {
+            margin: 20px; /* Ajustado para espaciar un poco más el texto */
+            font-size: 120%; /* Reducido el tamaño del texto para dispositivos móviles */
+            text-align: justify;
         }
-.iframe-container {
- 
+
+        .iframe-container {
             position: relative;
-            width: 360px;
-            height: 720px;
+            max-width: 100%; /* El iframe no excederá el tamaño del contenedor padre */
             margin: 0 auto; /* Centra el iframe */
         }
 
@@ -77,15 +76,19 @@
         </nav>
     </header>
 
-        <section>
-            <p >
-              El proyecto consiste en la creación de una plataforma de tutorías para el Instituto Tecnológico de Tlalpan. Esta plataforma tiene como objetivo proporcionar un espacio virtual donde estudiantes del instituto pueden recibir apoyo académico de tutores especializados en diversas materias. La plataforma facilitará la interacción entre tutores y estudiantes, permitiendo la programación de sesiones de tutoría y el intercambio de recursos educativos. El proyecto busca mejorar el rendimiento académico y la comprensión de los estudiantes, promoviendo un ambiente de aprendizaje colaborativo y personalizado.
-           </p>
-        </section>
-            <br>
-        <section>
-          <iframe  class="iframe-container " src="https://docs.google.com/forms/d/e/1FAIpQLSfjiiOftgFsdKsob4LchsTp0o-7tM58e0U9VEgHq83TXvWEOg/viewform?embedded=true" width="360" height="720" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-        </section>
+    <section>
+        <p>
+            El proyecto consiste en la creación de una plataforma de tutorías para el Instituto Tecnológico de Tlalpan. Esta plataforma tiene como objetivo proporcionar un espacio virtual donde estudiantes del instituto pueden recibir apoyo académico de tutores especializados en diversas materias. La plataforma facilitará la interacción entre tutores y estudiantes, permitiendo la programación de sesiones de tutoría y el intercambio de recursos educativos. El proyecto busca mejorar el rendimiento académico y la comprensión de los estudiantes, promoviendo un ambiente de aprendizaje colaborativo y personalizado.
+        </p>
+    </section>
+    
+    <br>
+    
+    <section>
+        <div class="iframe-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfjiiOftgFsdKsob4LchsTp0o-7tM58e0U9VEgHq83TXvWEOg/viewform?embedded=true" width="360" height="720" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
